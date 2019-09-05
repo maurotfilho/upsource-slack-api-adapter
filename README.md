@@ -38,6 +38,10 @@ password, then as usual:
 * Install npm dependencies by running `npm install`
 * Start the application by executing `npm start`
 
+## Running in Docker
+
+`docker build . -t upsource-slack-integration`
+`docker run -d -it -p 4000:4000 --restart always --name=upsource-slack upsource-slack-integration`
 
 
 ![Screenshot](slack-upsource.png)
